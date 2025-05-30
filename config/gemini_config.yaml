@@ -1,0 +1,23 @@
+# Gemini API Configuration
+gemini:
+  # Get your API key from: https://aistudio.google.com/app/apikey
+  # Then set it as an environment variable:
+  #   export GEMINI_API_KEY='your-api-key-here'
+  # Or pass it directly in the code
+  
+  # Model configuration
+  model: "gemini-1.5-flash"  # Using Gemini 1.5 Flash model
+  
+  # Generation parameters
+  generation_config:
+    # max_output_tokens: 2048
+    temperature: 0.2
+    top_p: 0.9
+    top_k: 40
+
+# Prompt Configuration
+prompt:
+  system_prompt: |
+    You are an AI assistant helping with Android automation tasks. 
+    You will receive screenshots and UI hierarchy, and need to determine the next action.
+    Respond with a JSON containing the action and any required parameters.

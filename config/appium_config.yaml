@@ -1,0 +1,32 @@
+# Appium Configuration
+appium:
+  host: 127.0.0.1
+  port: 4723
+  base_url: http://127.0.0.1:4723
+
+# Device Configuration
+device:
+  platform_name: Android
+  platform_version: "16"  # Android version of the emulator
+  device_name: "emulator-5554"  # Default emulator ID
+  automation_name: "UiAutomator2"
+  app_package: "com.android.settings"  # Android Settings package
+  app_activity: ".Settings"  # Main Settings activity
+  no_reset: true
+  full_reset: false
+  
+  # Additional capabilities
+  additional_capabilities:
+    uiautomator2ServerInstallTimeout: 60000
+    uiautomator2ServerLaunchTimeout: 60000
+    androidInstallTimeout: 90000
+    adbExecTimeout: 60000
+    newCommandTimeout: 300
+    autoGrantPermissions: true
+    ignoreHiddenApiPolicyError: true
+
+# Timeouts (in seconds)
+timeouts:
+  implicit: 10
+  command: 30
+  new_command: 30
