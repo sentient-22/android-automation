@@ -1,0 +1,103 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.env
+.venv
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# Data
+/data/screenshots/
+/data/vlm_dataset/images/
+/data/vlm_dataset/metadata.jsonl
+
+# Logs
+logs/
+*.log
+
+# Output
+output/
+checkpoints/
+
+# Appium
+*.apk
+*.ap_
+*.dex
+*.class
+bin/
+gen/
+
+# Android
+.gradle
+/local.properties
+.DS_Store
+/captures/
+.externalNativeBuild/
+.cxx/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment variables
+.env
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~.nib
+
+# Local development
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Project specific
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# Cache
+.cache/
+
+# Hugging Face
+.huggingface/
+
+# Weights & Biases
+wandb/
+
+# MLflow
+mlruns/
