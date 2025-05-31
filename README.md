@@ -96,9 +96,26 @@ The project includes a `.gitignore` file that excludes:
    - Update `config/appium_config.yaml` with your device details
    - Add your Gemini API key to `config/gemini_config.yaml`
 
-2. Run the agent:
+2. Start the Android Emulator in a separate terminal (replace `Pixel_6a` with your AVD name if different):
    ```bash
+   # Run this in a separate terminal as it will keep running
+   emulator -avd Pixel_6a -no-snapshot-load -no-snapshot-save &
+   ```
+   
+   Wait for the emulator to fully boot before proceeding.
+
+3. Run the agent in a new terminal:
+   ```bash
+   # Make sure to activate your virtual environment first
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   
+   # Run the agent with your task
    python main.py --task "Your task description" --max-steps 10
+   ```
+
+   Example task to open Chrome:
+   ```bash
+   python main.py --task "Open Chrome browser and go to google.com" --max-steps 5
    ```
 
 ## 🤖 Training
